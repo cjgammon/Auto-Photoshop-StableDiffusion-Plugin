@@ -95,6 +95,14 @@ to
 set COMMANDLINE_ARGS= --api
 ```
 that will allow the plugin to communicate with the automatic1111 project. After saving close the "webui-user.bat" file and run it normally.
+If on mac edit "webui-user.sh" and change
+```
+#export COMMANDLINE_ARGS=""
+```
+to 
+```
+export COMMANDLINE_ARGS="--api --skip-torch-cuda-test"
+```
 
 4) run photoshop. go to edit -> prefrences -> plugins
 	1) make sure you check "Enable Developer Mode" checkbox
